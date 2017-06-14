@@ -1,8 +1,8 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import * as defaultStyle from '../style';
 
 export default function styleConstructor(theme = {}) {
-  const appStyle = {...defaultStyle, ...theme};
+  const appStyle = { ...defaultStyle, ...theme };
   return StyleSheet.create({
     calendar: {
       position: 'absolute',
@@ -10,7 +10,7 @@ export default function styleConstructor(theme = {}) {
       left: 0,
       right: 0,
       borderBottomWidth: 1,
-      borderColor: appStyle.separatorColor
+      borderColor: appStyle.separatorColor,
     },
     calendarContainer: {
       position: 'absolute',
@@ -27,14 +27,14 @@ export default function styleConstructor(theme = {}) {
       height: 24,
       bottom: 0,
       alignItems: 'center',
-      backgroundColor: appStyle.calendarBackground
+      backgroundColor: appStyle.calendarBackground,
     },
     knob: {
       width: 38,
       height: 7,
       marginTop: 10,
       borderRadius: 3,
-      backgroundColor: '#f2F4f5'
+      backgroundColor: '#4990e2',
     },
     weekdays: {
       position: 'absolute',
@@ -46,7 +46,7 @@ export default function styleConstructor(theme = {}) {
       marginRight: 15,
       paddingTop: 15,
       paddingBottom: 7,
-      backgroundColor: appStyle.calendarBackground
+      backgroundColor: appStyle.calendarBackground,
     },
     weekday: {
       width: 32,
@@ -57,7 +57,7 @@ export default function styleConstructor(theme = {}) {
     reservations: {
       flex: 1,
       marginTop: 90,
-      backgroundColor: appStyle.backgroundColor
+      backgroundColor: appStyle.backgroundColor,
     },
   });
 }
